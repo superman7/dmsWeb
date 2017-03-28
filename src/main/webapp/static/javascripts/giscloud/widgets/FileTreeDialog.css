@@ -1,0 +1,16 @@
+.dialog-fileTreeDialog .dialog-header{
+    background-color: #eee;
+    cursor: move;
+}
+
+.dialog-fileTreeDialog .file-tree-container{
+    height: 200px;
+    margin: 10px 11px;
+    border: 1px solid #f2f2f2;
+    overflow: auto;
+}
+.dialog-fileTreeDialog .dialog-footer{
+    padding-bottom: 20px;
+    background: #fff;
+    text-align: center;
+}

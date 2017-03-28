@@ -1,0 +1,508 @@
+
+.searchForm {
+    width: 220px;
+    float: left;
+    margin-right: 10px;
+}
+
+.searchForm .search-clear {
+    display: inline;
+    position: absolute;
+    right: 45px;
+    z-index: 2;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.module-history-list {
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    position: relative;
+}
+
+.module-history-list .history-list-tips {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.historylistmanager-history {
+    position: absolute;
+    top: 0;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+}
+
+.historylistmanager-history li {
+    float: left;
+}
+
+.historylistmanager-history li a {
+    color: #06c;
+    text-decoration: none;
+    outline: 0;
+}
+
+.historylistmanager-separator-gt {
+    padding: 0 3px;
+    color: #aaa;
+}
+
+.list-header {
+    position: relative;
+    z-index: 1;
+}
+
+.list-header, .list-view {
+    display: block;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.list-header .col-item {
+    float: left;
+}
+
+.list-header .check {
+    width: 36px;
+    height: 41px;
+    position: relative;
+
+}
+
+.list-header .checked .check-icon {
+    background-position: -41px -12px;
+}
+
+.list-header .check-icon {
+    background: url("../images/list-view.png") no-repeat -9px -12px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 14px;
+    left: 11px;
+    cursor: default;
+    cursor: pointer;
+}
+
+.list-header ul {
+    border-radius: 2px;
+    border: 1px solid #d2d2d2;
+    color: #888;
+    height: 43px;
+    line-height: 43px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: #f7f7f7;
+}
+
+.list-header ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.list-header .col {
+    float: left;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
+    text-indent: 10px;
+    background: #F2F6FF;
+}
+
+.list-header .list-header-operatearea {
+    display: block;
+    position: absolute;
+    left: 36px;
+    top: 1px;
+    width: 100%;
+    background: #F2F6FF;
+    height: 41px;
+    line-height: 41px;
+}
+
+.list-header .list-header-operatearea .count-tips {
+    padding-right: 10px;
+    display: block;
+    float: left;
+    height: 41px;
+    line-height: 41px;
+}
+
+.list-header .list-header-operatearea .list-header-operate {
+    height: 41px;
+    line-height: 41px;
+}
+
+.list-header .list-header-operatearea .list-header-operate .btn {
+    margin-top: -3px;
+
+}
+
+.list-header .list-header-operatearea .list-header-operate .btn .label {
+    color: #0f0f0f;
+}
+
+.module-list {
+    position: relative;
+    overflow: hidden;
+}
+
+.list-view-item {
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #ebebeb;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.list-view-item .checkbox {
+    margin: 0px !important;
+    cursor: pointer;
+    display: block;
+    height: 38px;
+    left: 3px;
+    line-height: 38px;
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    text-indent: 10px;
+    top: 0;
+    width: 32px;
+    zoom: 1;
+    background: url('../images/checkbox.png') 9px 12px no-repeat;
+}
+
+.item-active .checkbox {
+    background-position: -31px 12px;
+}
+
+.list-view-item .fileicon {
+    cursor: default;
+    display: block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 37px;
+    top: 11px;
+}
+
+.list-view-item .file-name {
+    position: relative;
+    float: left;
+    text-indent: 10px;
+}
+
+.list-view-item .file-name .text {
+    position: relative;
+    text-indent: 60px;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.list-view-item .file-size, .list-view-item .ctime {
+    height: 100%;
+    float: left;
+    text-indent: 10px;
+}
+
+.list-view-item .path-info {
+    height: 100%;
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-indent: 10px;
+}
+
+.list-view-item .path-info .search-feild {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.grid-view .grid-view-item {
+    width: 142px;
+    height: 122px;
+    float: left;
+    margin: 4px 4px 0 0;
+    text-align: center;
+    display: block;
+}
+
+.grid-view-item .fileicon {
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+    width: 94px;
+    height: 96px;
+    border: 2px solid #FFF;
+    overflow: hidden;
+}
+
+.grid-view-item .fileicon .thumb {
+    position: absolute;
+}
+
+.grid-view-item.hover-item .fileicon, .grid-view-item.item-active .fileicon {
+    border: 2px solid #2e80dc;
+}
+
+.grid-view-item.hover-item .checkbox {
+    display: block;
+}
+
+.grid-view-item .checkbox {
+    margin: 0px !important;
+    background: url("../images/checkbox.png") 6px -36px no-repeat;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+
+.grid-view-item.item-active .checkbox {
+    display: block;
+    background-position: -30px -36px;
+}
+
+.grid-view-item .file-name {
+    display: block;
+    padding: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+}
+
+.module-edit-name {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    padding-left: 70px;
+    width: 100%;
+    z-index: 2;
+}
+
+.module-edit-name .new-dir-item {
+    background-color: #FFF;
+}
+
+.module-edit-name .box {
+    padding: 2px 3px;
+    width: 200px;
+    height: 24px;
+    vertical-align: middle;
+    border: 1px solid #D2D2D2;
+    background: #fff;
+}
+
+.module-edit-name-grid {
+    border-bottom: 0;
+    padding-left: 1px;
+    width: 141px;
+    padding-top: 102px;
+    padding-bottom: 2px;
+    top: 0px;
+}
+
+.module-edit-name-grid .box {
+    width: 75px;
+}
+
+.module-edit-name span, .zTree-edit-name span {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.zTree-edit-name {
+    display: inline-block;
+    height: 21px;
+    background-color: #FFF;
+    margin-right: -3px !important;
+}
+
+.zTree-edit-name span {
+    width: 21px;
+    height: 21px;
+    margin-top: -2px;
+}
+
+.module-edit-name span i, .zTree-edit-name span i {
+    font-size: 18px;
+    margin-top: 1px;
+}
+
+span.sure i {
+    color: #00BB00;
+}
+
+span.cancel i {
+    color: #FF0000;
+}
+
+.default {
+    background: url("../images/listIcon.png") 0 0px no-repeat;
+}
+
+.exe {
+    background: url("../images/listIcon.png") 0 -60px no-repeat;
+}
+
+.dir {
+    background: url("../images/listIcon.png") 0 -30px no-repeat;
+}
+
+.pic {
+    background: url("../images/listFileIcon.png") 0 0px no-repeat;
+}
+
+.pdf {
+    background: url("../images/listFileIcon.png") -30px 0px no-repeat;
+}
+
+.word {
+    background: url("../images/listFileIcon.png") -60px 0px no-repeat;
+}
+
+.excel {
+    background: url("../images/listFileIcon.png") -90px 0px no-repeat;
+}
+
+.txt {
+    background: url("../images/listFileIcon.png") -120px 0px no-repeat;
+}
+
+.ppt {
+    background: url("../images/listFileIcon.png") -150px 0px no-repeat;
+}
+
+.mp3 {
+    background: url("../images/listFileIcon.png") -180px 0px no-repeat;
+}
+
+.video {
+    background: url("../images/listFileIcon.png") -210px 0px no-repeat;
+}
+
+.zip, .rar {
+    background: url("../images/listFileIcon.png") -240px 0px no-repeat;
+}
+
+.bt {
+    background: url("../images/listFileIcon.png") -270px 0px no-repeat;
+}
+
+.dws {
+    background: url("../images/listFileIcon.png") -300px 0px no-repeat;
+}
+
+.mmap {
+    background: url("../images/listFileIcon.png") -330px 0px no-repeat;
+}
+
+.xmind {
+    background: url("../images/listFileIcon.png") -360px 0px no-repeat;
+}
+
+.mm {
+    background: url("../images/listFileIcon.png") -390px 0px no-repeat;
+}
+
+.default-l {
+    background: url("../images/listIconL.png") 20px 15px no-repeat;
+}
+
+.exe-l {
+    background: url("../images/listIconL.png") 20px -183px no-repeat;
+}
+
+.dir-l {
+    background: url("../images/listIconL.png") -84px -77px no-repeat;
+}
+
+.rar-l {
+    background: url("../images/listFileIconL.png") 20px 17px no-repeat;
+}
+
+.zip-l {
+    background: url("../images/listFileIconL.png") -80px 20px no-repeat;
+}
+
+.excel-l {
+    background: url("../images/listFileIconL.png") -180px 17px no-repeat;
+}
+
+.word-l {
+    background: url("../images/listFileIconL.png") -280px 17px no-repeat;
+}
+
+.ppt-l {
+    background: url("../images/listFileIconL.png") -380px 17px no-repeat;
+}
+
+.pdf-l {
+    background: url("../images/listFileIconL.png") -480px 17px no-repeat;
+}
+
+.txt-l {
+    background: url("../images/listFileIconL.png") -580px 17px no-repeat;
+}
+
+.mp3-l {
+    background: url("../images/listFileIconL.png") -680px 17px no-repeat;
+}
+
+.bt-l {
+    background: url("../images/listFileIconL.png") -780px 18px no-repeat;
+}
+
+.video-l {
+    background: url("../images/listFileIconL.png") -880px 17px no-repeat;
+}
+
+.dws-l {
+    background: url("../images/listFileIconL.png") -980px 17px no-repeat;
+}
+
+.mmap-l {
+    background: url("../images/listFileIconL.png") -1080px 17px no-repeat;
+}
+
+.xmind-l {
+    background: url("../images/listFileIconL.png") -1180px 17px no-repeat;
+}
+
+.mm-l {
+    background: url("../images/listFileIconL.png") -1280px 17px no-repeat;
+}
+
+.ztree li a.curSelectedNode {
+    background-color: #BBD4EF !important;
+}
+
+.ztree li span.button.ico_docu {
+    margin-right: 2px;
+    background-position: -147px 0 !important;
+    vertical-align: top;
+    *vertical-align: middle
+}
