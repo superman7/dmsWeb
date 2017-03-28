@@ -12,10 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 
 /**
- * @工程: gisplatform
- * @包名: com.aerors.th.gis.controller
- * @描述: gis数据的操作入口
- * @作者: 巩志远(iamlgong@163.com)
  * @版本: V1.0
  * @时间: 2016/7/13 10:38
  */
