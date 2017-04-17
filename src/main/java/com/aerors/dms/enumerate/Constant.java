@@ -28,6 +28,13 @@ public class Constant {
 	/**浏览图拇指图推送区**/
 	public static final String PUSH_FILE_STORAGE="push_file_storage";
 	public static final String SESSION_ADMIN_isDel ="session_admin_isdel";
+	//SystemConfigConstant 设置systemConfig中的常量
+	public static final String MAX_JOB_NUMBER_KEY = "maxJobNumber";
+	public static final String DEFAULT_DATA_IN_FLOW = "dataInFlow";
+	public static final String DEFAULT_DATA_OUT_FLOW = "dataOutFlow";
+	public static final String DEFAULT_DATA_QUERY_FLOW = "dataQueryFlow";
+	public static final String DEFAULT_DATA_SEARCH_FLOW = "dataSearchFlow";
+	
 	/**
 	 * job status<br/>
 	 * <br/>
