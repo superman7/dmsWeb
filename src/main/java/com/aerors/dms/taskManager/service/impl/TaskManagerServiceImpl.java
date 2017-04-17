@@ -25,22 +25,18 @@ public class TaskManagerServiceImpl implements ITaskManagerService {
 	private ModuleDao moduleDao;
 
 	public int addModule(Module module) throws Exception {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	public void removeModules(int[] moduleIds) throws Exception {
-		// TODO Auto-generated method stub
 		
 	}
 
 	public void modifyModule(Module module) throws Exception {
-		// TODO Auto-generated method stub
 		
 	}
 
 	public IModuleInterface getModuleImplOjbect(int moduleId) throws Exception {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -48,7 +44,6 @@ public class TaskManagerServiceImpl implements ITaskManagerService {
 	 * @see com.aerors.dms.taskManager.service.ITaskManagerService#searchModules()
 	 */
 	public List<Module> searchModules() {
-		// TODO Auto-generated method stub
 		Query query=new Query();
 		List<Module> list=moduleDao.searchModules(query);
 		return list;
