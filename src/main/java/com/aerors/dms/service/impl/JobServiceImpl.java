@@ -52,7 +52,6 @@ public class JobServiceImpl implements IJobService{
 		
 		JobDataMap contextMap = scheduleJob.getJobDataMap();
 		contextMap.put("jobInstance", job);
-		
 		return scheduler.scheduleJob(scheduleJob, scheduleTirgger);
 	}
 }
