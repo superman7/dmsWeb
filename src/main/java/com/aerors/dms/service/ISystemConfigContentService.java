@@ -3,6 +3,8 @@
  */
 package com.aerors.dms.service;
 
+import java.util.List;
+
 import com.aerors.dms.model.SystemConfigContentModel;
 
 /** 
@@ -13,6 +15,11 @@ import com.aerors.dms.model.SystemConfigContentModel;
 * @date 2017年5月2日 上午10:44:06 
 * 
 */
-public interface ISystemConfigContentService {
-	public void save(SystemConfigContentModel systemConfigContent);
+public interface ISystemConfigContentService extends IBaseService<SystemConfigContentModel>{
+	 /**
+     * 获取系统参数列表
+     *
+     * @return {List}
+     */
+   public List<SystemConfigContentModel> list();
 }
