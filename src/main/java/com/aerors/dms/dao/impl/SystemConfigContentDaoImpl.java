@@ -3,6 +3,8 @@
  */
 package com.aerors.dms.dao.impl;
 
+import org.springframework.stereotype.Repository;
+
 import com.aerors.dms.dao.ISystemConfigContentDao;
 import com.aerors.dms.model.SystemConfigContentModel;
 
@@ -14,6 +16,7 @@ import com.aerors.dms.model.SystemConfigContentModel;
 * @date 2017年4月28日 上午8:58:01 
 * 
 */
+@Repository
 public class SystemConfigContentDaoImpl extends ABaseMongoDao<SystemConfigContentModel> implements ISystemConfigContentDao {
 
 	@Override
