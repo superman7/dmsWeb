@@ -3,7 +3,10 @@
  */
 package com.aerors.dms.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.aerors.dms.dao.ISystemConfigContentDao;
 import com.aerors.dms.model.SystemConfigContentModel;
@@ -17,12 +20,36 @@ import com.aerors.dms.service.ISystemConfigContentService;
 * @date 2017年5月2日 上午10:49:23 
 * 
 */
+@Service
 public class SystemConfigContentServiceImpl implements ISystemConfigContentService{
 	@Autowired
     private ISystemConfigContentDao systemConfigContentDaoImpl;
-    
-	public void save(SystemConfigContentModel systemConfigContent) {
-		this.systemConfigContentDaoImpl.save(systemConfigContent);
+
+	public void save(SystemConfigContentModel t) {
+		systemConfigContentDaoImpl.save(t);		
 	}
 
+	public void remove(SystemConfigContentModel t) {
+		systemConfigContentDaoImpl.del(t);		
+	}
+
+	public Long count() {
+		return systemConfigContentDaoImpl.queryCount(null);
+	}
+
+	public List<SystemConfigContentModel> findAllWithPage(int startIndex, int pageSize) {
+		return systemConfigContentDaoImpl.queryPageList(startIndex, pageSize);
+	}
+
+	public SystemConfigContentModel queryById(Object id) {
+		return systemConfigContentDaoImpl.queryById(id);
+	}
+
+	public void removeById(Object id) {
+		systemConfigContentDaoImpl.delById(id);
+	}
+
+	public List<SystemConfigContentModel> list() {
+		return systemConfigContentDaoImpl.queryList(null);
+	}
 }
