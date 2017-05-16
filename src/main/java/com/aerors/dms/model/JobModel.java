@@ -5,6 +5,9 @@ import java.io.Serializable;
 import org.springframework.data.annotation.Id;
 
 public class JobModel implements Serializable {
+	
+	private static final long serialVersionUID = -2970110528902734546L;
+
 	/** 任务id **/
 	@Id
 	private String jobId;
@@ -27,7 +30,7 @@ public class JobModel implements Serializable {
 	/** 任务描述 **/
 	private String desc;
 
-	/** 任务描述 **/
+	/** 任务流程 **/
 	private String jobFlow;
 	
 	public String getJobId() {
