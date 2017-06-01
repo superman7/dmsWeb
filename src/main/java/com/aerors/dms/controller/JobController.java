@@ -1,5 +1,8 @@
 package com.aerors.dms.controller;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,9 +47,10 @@ public class JobController {
         	//ArchiveTaskJob 设置ArchiveJob相关属性
         	job.setJobType(JOB_TYPE.DATA_IN.getEnumValue().toString());
         	job.setJobFlow(Constant.DEFAULT_DATA_IN_FLOW);
+        	job.setTest(getContent("/Users/pudgefan/Desktop/test.png"));
             this.jobServiceImpl.save(job);
             success = true;
-            this.jobServiceImpl.scheduleStart(job);
+//            this.jobServiceImpl.scheduleStart(job);
         } catch (Exception e) {
         	e.printStackTrace(	);
         }
@@ -55,4 +59,30 @@ public class JobController {
         return result;
 	}
 	
+	@RequestMapping(value = "/testImg", method = RequestMethod.GET)
+	public byte[] testImg() throws IOException{
+		return getContent("/Users/pudgefan/Desktop/test.png");
+	}
+	
+	public static byte[] getContent(String filePath) throws IOException {  
+        File file = new File(filePath);  
+        long fileSize = file.length();  
+        if (fileSize > Integer.MAX_VALUE) {  
+            System.out.println("file too big...");  
+            return null;  
+        }  
+        FileInputStream fi = new FileInputStream(file);  
+        byte[] buffer = new byte[(int) fileSize];  
+        int offset = 0;  
+        int numRead = 0;  
+        while (offset < buffer.length && (numRead = fi.read(buffer, offset, buffer.length - offset)) >= 0) {  
+            offset += numRead;  
+        }  
+        // 确保所有数据均被读取  
+        if (offset != buffer.length) {  
+        	throw new IOException("Could not completely read file " + file.getName());  
+        }  
+        fi.close();  
+        return buffer;  
+    }
 }

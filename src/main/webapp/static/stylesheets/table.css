@@ -1,27 +1,33 @@
-table th{
-    text-align: center;
+table th {
+	text-align: center;
 }
-table td{
-    vertical-align: middle!important;
+
+table td {
+	vertical-align: middle !important;
 }
-.ceterCell{
-    text-align: center;
-    vertical-align: middle;
+
+.ceterCell {
+	text-align: center;
+	vertical-align: middle;
 }
+
 .ellipsisCell {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
 }
-.thumbImage{
-    width: 80px;
-    height: 80px;
+
+.thumbImage {
+	width: 80px;
+	height: 80px;
 }
+
 td.details-control {
-    background: url('resources/details_open.png') no-repeat center center;
-    cursor: pointer;
+	background: url('resources/details_open.png') no-repeat center center;
+	cursor: pointer;
 }
+
 tr.shown td.details-control {
-    background: url('resources/details_close.png') no-repeat center center;
+	background: url('resources/details_close.png') no-repeat center center;
 }

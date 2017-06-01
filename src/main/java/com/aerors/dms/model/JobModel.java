@@ -1,10 +1,14 @@
 package com.aerors.dms.model;
 
+import java.io.File;
 import java.io.Serializable;
 
 import org.springframework.data.annotation.Id;
 
 public class JobModel implements Serializable {
+	
+	private static final long serialVersionUID = -2970110528902734546L;
+
 	/** 任务id **/
 	@Id
 	private String jobId;
@@ -27,9 +31,22 @@ public class JobModel implements Serializable {
 	/** 任务描述 **/
 	private String desc;
 
-	/** 任务描述 **/
+	/** 任务流程 **/
 	private String jobFlow;
 	
+	/** 任务对应的数据属性Id **/
+	private String dataAttrId;
+	
+	private byte[] test;
+	
+	public byte[] getTest() {
+		return test;
+	}
+
+	public void setTest(byte[] test) {
+		this.test = test;
+	}
+
 	public String getJobId() {
 		return jobId;
 	}
@@ -92,5 +109,13 @@ public class JobModel implements Serializable {
 
 	public void setJobFlow(String jobFlow) {
 		this.jobFlow = jobFlow;
+	}
+
+	public String getDataAttrId() {
+		return dataAttrId;
+	}
+
+	public void setDataAttrId(String dataAttrId) {
+		this.dataAttrId = dataAttrId;
 	}
 }
