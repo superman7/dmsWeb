@@ -140,8 +140,10 @@ define([
             chunked: true, //分块上传
             //runtimeOrder:'flash', {Object} [可选] [默认值：html5,flash] 指定运行时启动顺序。默认会想尝试 html5 是否支持，如果支持则使用 html5, 否则则使用 flash.
             prepareNextFile: true,//{Boolean} [可选] [默认值：false] 是否允许在文件传输时提前把下一个文件准备好。 对于一个文件的准备工作比较耗时，比如图片压缩，md5序列化。 如果能提前在当前文件传输期处理，可以节省总体耗时。
-            webkitdirectory: false, //是否可文件夹上传
-            duplicate: true //{Boolean} [可选] [默认值：undefined] 去重， 根据文件名字、文件大小和最后修改时间来生成hash Key.
+            webkitdirectory: true, //是否可文件夹上传
+            duplicate: true, //{Boolean} [可选] [默认值：undefined] 去重， 根据文件名字、文件大小和最后修改时间来生成hash Key.
+            threads: 1, //{Boolean} [可选] [默认值：3] 上传并发数。允许同时最大上传进程数。
+            chunkSize: 52428800//[可选] [默认值：5242880] 如果要分片，分多大一片？ 默认大小为5M.此处选用50M
         }
         options = options || {};
         var settings = $.extend({}, defaultSetting, options);

@@ -434,38 +434,6 @@ define([
                 _cancelCreateDirecotry();
             }
         }
-        /* contextjs.init({preventDoubleContext: true});
-         contextjs.attach('.grid-view-item',[
-         {text: '质检'}
-         /!* , {text: '发布服务',subMenu:[
-         {text:'Arcgis server'}
-         ]}*!/
-         ,{text: '质检'}
-         ,{text: '质检'}
-         ,{text: '质检'} ,{text: '质检'}
-         ,{text: '质检'}
-         ,{text: '质检'}
-         ,{text: '质检'}
-         ])
-
-         this.rightMouse = function (data, event) {
-         console.debug(contextjs);
-         console.debug(event);
-         contextjs.destroy($(event.currentTarget));
-         contextjs.attach($(event.currentTarget), [
-         {text: '质检'}
-         /!* , {text: '发布服务',subMenu:[
-         {text:'Arcgis server'}
-         ]}*!/
-         ,{text: '质检'}
-         ,{text: '质检'}
-         ,{text: '质检'} ,{text: '质检'}
-         ,{text: '质检'}
-         ,{text: '质检'}
-         ,{text: '质检'}
-         ]);
-         }*/
-
 
         /**
          * 由于在创建文件夹的操作时,将一个对象加入了显示数组,所以要及时删除
