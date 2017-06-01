@@ -41,7 +41,7 @@ public class SystemConfigContentController {
             this.systemConfigContentServiceImpl.save(sccm);
             success = true;
         } catch (Exception e) {
-
+        	e.printStackTrace();
         }
         result.put("success", success);
 
